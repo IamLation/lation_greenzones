@@ -38,4 +38,4 @@ A greenzones script to create controlled areas on the map for FiveM with many fe
 - Add 'ensure lation_greenzones' in your 'server.cgf'
 
 ## Preview
-[Streamable - Lation's Greenzones](https://streamable.com/rtgx8v)
+[Streamable - Lation's Greenzones](https://streamable.com/nat0ce)
