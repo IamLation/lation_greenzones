@@ -1,8 +1,9 @@
 # Lation's Greenzones
 A greenzones script to create controlled areas on the map for FiveM with many features. You can create persistent greenzones that exist all the time for areas like Hopitals, Police Stations, etc and completely customize them individually so each zone has it's own settings. Furthermore you can create (and delete) temporary greenzones on-the-fly while in-game via the /setzone & /clearzone commands with tons of features and customizability there too!
 
-## Support & More
+## Support, Scripts & More
 [Click here to join our Discord](https://discord.gg/9EbY4nM5uu)
+[Click here to visit our Store](https://lationscripts.com/github)
 
 ## Persistent Greenzone Features:
 - Create custom greenzones via the config (for places like hospitals, police stations, etc) that exists all the time
