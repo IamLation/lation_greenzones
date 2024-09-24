@@ -3,7 +3,7 @@ A greenzones script to create controlled areas on the map for FiveM with many fe
 
 ## Support, Scripts & More
 - [Click here to join our Discord](https://discord.gg/9EbY4nM5uu)
-- [Click here to visit our Store](https://lationscripts.com/github)
+- [Click here to visit our Store](https://lationscripts.com/?utm_source=github&utm_medium=free-script)
 
 ## Persistent Greenzone Features:
 - Create custom greenzones via the config (for places like hospitals, police stations, etc) that exists all the time
