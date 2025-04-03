@@ -190,22 +190,22 @@ end
 -- Start of events for creating Greenzones in-game, this is the menu that takes data, passes it to server
 lib.callback.register('lation_greenzones:adminZone', function()
     pedCoords = GetEntityCoords(cache.ped)
-    adminZoneMenu = lib.inputDialog('Create Greenzone', {
-        {type = 'input', label = 'Blip Name', description = 'The name of the Greenzone on the map', placeholder = 'Greenzone', icon = 'quote-left', required = true, min = 4, max = 16},
-        {type = 'input', label = 'Display Text', description = 'Text to display on everyone\'s screen in this zone', placeholder = 'Active Greenzone', icon = 'comment', required = true},
-        {type = 'color', label = 'Display Text Color', description = 'The HTML color code of the text displayed', default = '#ff5a47', icon = 'palette', required = true},
-        {type = 'select', label = 'Display Text Position', description = 'The position on the screen for the text', options = {
-            { value = 'right-center', label = 'Right center'},
-            { value = 'left-center', label = 'Left center' },
-            { value = 'top-center', label = 'Top center' }
+    adminZoneMenu = lib.inputDialog(locale('menu.title'), {
+        {type = 'input', label = locale('menu.blipName'), description = locale('menu.blipNameDescription'), placeholder = locale('menu.blipNamePlaceholder'), icon = 'quote-left', required = true, min = 4, max = 16},
+        {type = 'input', label = locale('menu.displayText'), description = locale('menu.displayTextDescription'), placeholder = locale('menu.displayTextPlaceholder'), icon = 'comment', required = true},
+        {type = 'color', label = locale('menu.displayTextColor'), description = locale('menu.displayTextColorDescription'), default = '#ff5a47', icon = 'palette', required = true},
+        {type = 'select', label = locale('menu.displayTextPosition'), description = locale('menu.displayTextPositionDescription'), options = {
+            { value = 'right-center', label = locale('menu.positionRightCenter') },
+            { value = 'left-center', label = locale('menu.positionLeftCenter') },
+            { value = 'top-center', label = locale('menu.positionTopCenter') }
         }, default = 'top-center', clearable = false, required = true},
-        {type = 'slider', label = 'Size (radius)', icon = 'sliders', required = true, default = 10, min = 1, max = 100, step = 1},
-        {type = 'checkbox', label = 'Disable Firing', checked = false},
-        {type = 'checkbox', label = 'Everyone Invincible', checked = false},
-        {type = 'slider', label = 'Speed Limit (MPH)', icon = 'sliders', required = false, default = 0, min = 0, max = 100, step = 10},
-        {type = 'number', label = 'Blip ID', description = 'The sprite ID to display on the map', icon = 'map-pin', default = 487, required = true},
-        {type = 'number', label = 'Blip Color', description = 'The blip color for the above sprite', icon = 'palette', default = 1, required = true}
-      })
+        {type = 'slider', label = locale('menu.size'), icon = 'sliders', required = true, default = 10, min = 1, max = 100, step = 1},
+        {type = 'checkbox', label = locale('menu.disableFiring'), checked = false},
+        {type = 'checkbox', label = locale('menu.invincible'), checked = false},
+        {type = 'slider', label = locale('menu.speedLimit'), icon = 'sliders', required = false, default = 0, min = 0, max = 100, step = 10},
+        {type = 'number', label = locale('menu.blipID'), description = locale('menu.blipIDDescription'), icon = 'map-pin', default = 487, required = true},
+        {type = 'number', label = locale('menu.blipColor'), description = locale('menu.blipColorDescription'), icon = 'palette', default = 1, required = true}
+    })
     if adminZoneMenu == nil then
         return
     else
@@ -300,8 +300,8 @@ end
 -- The confirmation for deleting an active temporary greenzone
 lib.callback.register('lation_greenzones:adminZoneClear', function()
     local confirm = lib.alertDialog({
-        header = 'Confirm Action',
-        content = 'Are you sure you want to delete your Green Zone?',
+        header = locale('confirm.title'),
+        content = locale('confirm.content'),
         centered = true,
         cancel = true
     })

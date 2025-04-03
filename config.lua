@@ -6,7 +6,7 @@ Config.GreenzonesClearCommand = 'clearzone' -- The command to run in-game to cle
 
 Config.GreenZones = { -- These are persistent greenzones that exist constantly, at all times - you can create as many as you want here
     ['hospital'] = {
-        coords = vec3(299.2270, -584.6892, 43.2608), -- The center-most location of the greenzone 
+        coords = vec3(299.2270, -584.6892, 43.2608), -- The center-most location of the greenzone
         radius = 100.0, -- The radius (how large or small) the greenzone is (note: this must include the .0 on the end of the number to work)
         disablePlayerVehicleCollision = false, -- Do you want to disable players & their vehicles collisions between each other? (true if yes, false if no)
         enableSpeedLimits = true, -- Do you want to enforce a speed limit in this zone? (true if yes, false if no)
@@ -82,8 +82,8 @@ Config.GreenZones = { -- These are persistent greenzones that exist constantly, 
 
 Notifications = {
     position = 'top', -- The position for all notifications
-    greenzoneTitle = 'Green Zone', -- Title when entering a greenzone
+    greenzoneTitle = locale('notify.greenzoneTitle'), -- Title when entering a greenzone
     greenzoneIcon = 'border-all', -- The icon displayed on the notifications
-    greenzoneEnter = 'You have entered a greenzone and certain actions have been disabled', -- Description when entering a greenzone
-    greenzoneExit = 'You have exited a greenzone and all actions have been restored', -- Description when exiting a greenzone
+    greenzoneEnter = locale('notify.greenzoneEnter'), -- Description when entering a greenzone
+    greenzoneExit = locale('notify.greenzoneExit'), -- Description when exiting a greenzone
 }

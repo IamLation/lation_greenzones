@@ -1,0 +1,39 @@
+{
+    "notify": {
+        "greenzoneTitle": "Green Zone",
+        "greenzoneEnter": "You have entered a Green Zone and certain actions have been disabled",
+        "greenzoneExit": "You have exited a Green Zone and all actions have been restored"
+    },
+    "menu": {
+        "title": "Create Green Zone",
+        "blipName": "Blip Name",
+        "blipNameDescription": "The name of the Green Zone on the map",
+        "blipNamePlaceholder": "Green Zone",
+        "displayText": "Display Text",
+        "displayTextDescription": "Text to display on everyone's screen in this zone",
+        "displayTextPlaceholder": "Green Zone",
+        "displayTextColor": "Display Text Color",
+        "displayTextColorDescription": "The HTML color code of the text displayed",
+        "displayTextPosition": "Display Text Position",
+        "displayTextPositionDescription": "The position on the screen for the text",
+        "positionRightCenter": "Right center",
+        "positionLeftCenter": "Left center",
+        "positionTopCenter": "Top center",
+        "size": "Size (radius)",
+        "disableFiring": "Disable Firing",
+        "invincible": "Everyone Invincible",
+        "speedLimit": "Speed Limit (MPH)",
+        "blipID": "Blip ID",
+        "blipIDDescription": "The sprite ID to display on the map",
+        "blipColor": "Blip Color",
+        "blipColorDescription": "The blip color for the above sprite"
+    },
+    "confirm": {
+        "title": "Confirm Action",
+        "content": "Are you sure you want to delete your Green Zone?"
+    },
+    "commands": {
+        "setzone": "Create a temporary Green Zone",
+        "deletezone": "Delete a temporary Green Zone"
+    }
+}
