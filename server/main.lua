@@ -1,18 +1,16 @@
 lib.addCommand(Config.GreenzonesCommand, {
-    help = 'Create a temporary greenzone',
+    help = locale('commands.setzone'),
     restricted = 'group.admin'
 }, function(source, args, raw)
     local source = source
-    local ped = ESX.GetPlayerFromId(source)
     lib.callback('lation_greenzones:adminZone', source, cb)
 end)
 
 lib.addCommand(Config.GreenzonesClearCommand, {
-    help = 'Delete a temporary greenzone',
+    help = locale('commands.deletezone'),
     restricted = 'group.admin'
 }, function(source, args, raw)
     local source = source
-    local ped = ESX.GetPlayerFromId(source)
     lib.callback('lation_greenzones:adminZoneClear', source, cb)
 end)
 
