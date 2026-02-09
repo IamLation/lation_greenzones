@@ -1,5 +1,9 @@
 Config = {}
 
+locale = function(key)
+    return key
+end
+
 Config.EnableNotifications = false -- Do you want notifications when a player enters and exits the preconfigured greenzones (The Config.GreenZones)?
 Config.GreenzonesCommand = 'setzone' -- The command to run in-game to start creating a temporary greenzone
 Config.GreenzonesClearCommand = 'clearzone' -- The command to run in-game to clear an existing temporary greenzone
