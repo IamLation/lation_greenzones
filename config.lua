@@ -1,10 +1,6 @@
 Config = {}
 
-locale = function(key)
-    return key
-end
-
-Config.EnableNotifications = false -- Do you want notifications when a player enters and exits the preconfigured greenzones (The Config.GreenZones)?
+Config.EnableNotifications = true -- Do you want notifications when a player enters and exits the preconfigured greenzones (The Config.GreenZones)?
 Config.GreenzonesCommand = 'setzone' -- The command to run in-game to start creating a temporary greenzone
 Config.GreenzonesClearCommand = 'clearzone' -- The command to run in-game to clear an existing temporary greenzone
 
@@ -82,12 +78,4 @@ Config.GreenZones = { -- These are persistent greenzones that exist constantly, 
         blipName = 'Another Greenzone'
     }
     -- Create more zones here by following the same format as above
-}
-
-Notifications = {
-    position = 'top', -- The position for all notifications
-    greenzoneTitle = locale('notify.greenzoneTitle'), -- Title when entering a greenzone
-    greenzoneIcon = 'border-all', -- The icon displayed on the notifications
-    greenzoneEnter = locale('notify.greenzoneEnter'), -- Description when entering a greenzone
-    greenzoneExit = locale('notify.greenzoneExit'), -- Description when exiting a greenzone
 }

@@ -56,10 +56,10 @@ for k, v in pairs(Config.GreenZones) do
         end
         if Config.EnableNotifications then
             lib.notify({
-                title = Notifications.greenzoneTitle,
-                description = Notifications.greenzoneEnter,
+                title = locale('notify.greenzoneTitle'),
+                description = locale('notify.greenzoneEnter'),
                 type = 'success',
-                position = Notifications.position,
+                position = 'top',
                 duration = 6000,
                 style = {
                 backgroundColor = '#ff5a47',
@@ -68,8 +68,8 @@ for k, v in pairs(Config.GreenZones) do
                         color = '#2C2C2C',
                     }
                 },
-                icon = Notifications.greenzoneIcon,
-                iconColor = '#2C2C2C'
+                icon = 'circle',
+                iconColor = '#058b1c'
             })
         end
     end
@@ -91,6 +91,9 @@ for k, v in pairs(Config.GreenZones) do
                 end
             end
         end
+        if v.removeWeapons then
+            GiveWeaponToPed(cache.ped, `WEAPON_UNARMED`, 0, false, true)
+        end
         if v.disableFiring then
             SetPlayerCanDoDriveBy(cache.ped, true)
         end
@@ -106,10 +109,10 @@ for k, v in pairs(Config.GreenZones) do
         end
         if Config.EnableNotifications then
             lib.notify({
-                title = Notifications.greenzoneTitle,
-                description = Notifications.greenzoneExit,
+                title = locale('notify.greenzoneTitle'),
+                description = locale('notify.greenzoneExit'),
                 type = 'error',
-                position = Notifications.position,
+                position = 'top',
                 style = {
                 backgroundColor = '#72E68F',
                 color = '#2C2C2C',
@@ -117,8 +120,8 @@ for k, v in pairs(Config.GreenZones) do
                         color = '#2C2C2C',
                     }
                 },
-                icon = Notifications.greenzoneIcon,
-                iconColor = '#2C2C2C'
+                icon = 'circle',
+                iconColor = '#058b1c'
             })
         end
     end
